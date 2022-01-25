@@ -1,6 +1,9 @@
 const dice = [1, 2, 3, 4, 5, 6];
 
-generate.addEventListener ("click",
+let generateBtn = document.getElementById("generate");
+let mailBtn = document.getElementById("ask-mail");
+
+generateBtn.addEventListener ("click",
     function () {
 
         let randomDicePlayer = dice[Math.floor(Math.random() * dice.length)];
@@ -23,6 +26,34 @@ generate.addEventListener ("click",
     }
 
 )
+
+const mail = ["peterparker@gmail.com", "maryjanewatson@gmail.com", "harryosborn@gmail.com"];
+
+mailBtn.addEventListener ("click",
+    function() {
+
+        let request = prompt("Inserisci il tuo indirizzo e-mail");
+        for (let i = 0; i < mail.length; i++) {
+            let mailFound = mail[i];
+            console.log(mailFound);
+
+            if (request == mailFound) {
+                var login = true; 
+            }
+
+        }
+
+        if (login == true) {
+            alert("Indirizzo e-mail verificato. Accesso eseguito.");
+        } else {
+            alert("Indirizzo e-mail respinto. Verificare credenziali.");
+        }
+        
+    }
+
+)
+
+
 
 
 
