@@ -5,24 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Mail e Dadi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <button type="button" id="generate">Genera</button>
+    <section class="container">
+        <h1>SPIDER-MAN vs GREEN GOBLIN</h1>
+        <h2>GIOCO DI DADI</h2>
+        <h3>Regole del gioco:</h3>
+        <p>Impersona Spider-Man e tenta di sconfiggere la sua nemesi, il Green Goblin, una volta per tutte. Clicca sul pulsante "Combatti" e verrà generato un numero casuale da 1 a 6 per Spider-Man e per Green Goblin. Chi ottiene il punteggio più alto è il vincitore dello scontro!</p>
+        <button type="button" id="generate">Combatti</button>
+    </section>
 
-    <div id="player-number">
+    <div class="container flex">
+
+        <div class="box box-spidey flex" id="player-number">
+
+        </div>
+
+        <div class="box box-goblin flex" id="computer-number">
+
+        </div>
+
+        <div class="box-result flex" id="result">
+
+        </div>
 
     </div>
 
-    <div id="computer-number">
+    <section class="container">
+        <h1>ACCESSO ALLA SALA DI CEREBRO</h1>
+        <h2>Gli X-Men sono fuori in azione. Inserisci le giuste credenziali per accedere a Cerebro.</h2>
+        <p>Le credenziali corrette sono composte dal nome da civile di uno dei seguenti X-Men più @x-men.com:</p>
+        <ul>
+            <li>Ciclope</li>
+            <li>Bestia</li>
+            <li>Marvel Girl</li>
+            <li>Tempesta</li>
+            <li>Professor X</li>
+        </ul>
 
-    </div>
-
-    <div id="result">
-
-    </div>
-
-    <button type="button" id="ask-mail">Inserisci e-Mail</button>
+        <button type="button" id="ask-mail">Inserisci e-Mail</button>
+    </section>
     
     <script type="text/javascript" src="main.js"></script>
 </body>

@@ -15,19 +15,19 @@ generateBtn.addEventListener ("click",
         let result = document.getElementById("result");
 
         if (randomDicePlayer > randomDiceComputer) {
-            result.innerHTML = ("Congratulazioni! Hai vinto la partita!")
+            result.innerHTML = ("Il Green Goblin non può nulla contro il senso di ragno di Spider-Man. Hai abbattuto il nemico e vinto lo scontro!")
         } else if (randomDicePlayer < randomDiceComputer) {
-            result.innerHTML = ("Peccato. Hai perso la partita. Prova ancora!")
+            result.innerHTML = ("Questa volta l'astuzia del Green Goblin ha messo al tappeto Spider-Man. Prova ancora!")
         }
         else {
-            result.innerHTML = ("La partita è terminata in parità. Prova ancora!")
+            result.innerHTML = ("La forza dei due avversari si equivale. Continua a provare!")
         }
 
     }
 
 )
 
-const mail = ["peterparker@gmail.com", "maryjanewatson@gmail.com", "harryosborn@gmail.com"];
+const mail = ["scottsummers@x-men.com", "hankmccoy@x-men.com", "jeangrey@x-men.com", "ororomunroe@x-men.com", "charlesxavier@x-men.com"];
 
 mailBtn.addEventListener ("click",
     function() {
@@ -44,9 +44,9 @@ mailBtn.addEventListener ("click",
         }
 
         if (login == true) {
-            alert("Indirizzo e-mail verificato. Accesso eseguito.");
+            alert("Credenziali verificate. Accesso eseguito.");
         } else {
-            alert("Indirizzo e-mail respinto. Verificare credenziali.");
+            alert("Credenziali respinte. Verificare credenziali.");
         }
         
     }
